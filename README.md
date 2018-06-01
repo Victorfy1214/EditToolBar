@@ -1,5 +1,6 @@
 # EditToolBar
 css + javascript实现的可拖动工具条
+
 写在前面：
 ====
 该工具条中的水波纹特效非原创，是从[`幸凡学习网`](http://www.86y.org/art_detail.aspx?id=828)拿到的，网址：http://www.86y.org/art_detail.aspx?id=828
@@ -15,7 +16,7 @@ css + javascript实现的可拖动工具条
 
 效果预览
 ====
-![Image text](https://raw.githubusercontent.com/Victorfy1214/FloatWindow/master/preview/GIF.gif)
+![Image text](https://raw.githubusercontent.com/Victorfy1214/EditToolBar/master/preview/GIF.gif)
 
 使用方法
 ====
