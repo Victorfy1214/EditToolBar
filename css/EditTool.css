@@ -1,0 +1,88 @@
+    /*编辑工具条界面*/
+    .tool_border{
+        position:absolute;
+        top: 1rem;
+        height: 2.5rem;
+        background-color: rgba(255, 255, 255, 0.79);
+        box-shadow: 0 2px 3px 0 rgba(119, 119, 119, 0.45), 0 2px 3px 0 rgba(119, 119, 119, 0.46);
+        border-radius: 3px;
+        display:flex;
+        flex-direction:row;
+        visibility: hidden;
+    }
+
+    /*按钮颜色，默认为灰色不可用状态*/
+    .icon-color{
+        /*color:#0078A8;*/
+        color:rgba(0,0,0,0.2);
+    }
+
+    /*按钮图标的默认大小*/
+    .icon-size{
+        line-height: 2.5rem;
+        font-size: 1.08rem;
+    }
+
+    /*按钮的通用模板样式*/
+    .button-pattern{
+        line-height: 2.5rem;
+        flex:1;
+        font-size: 1rem;
+        text-align: center;
+        cursor: pointer;
+        position:relative;
+        overflow:hidden;
+        user-select:none;
+    }
+
+    /*按钮的边界*/
+    .button-pattern-border{
+        border-right: solid 1px rgba(119, 119, 119, 0.35);
+    }
+
+    /*按钮的内容*/
+    .button-pattern > span{
+        /*color:#222222;*/
+        color:rgba(0,0,0,0.2);
+        padding-left: 0.2rem;
+        padding-right:0.1rem;
+        text-shadow:0 0 0.01em rgba(95, 95, 95, 0.21),-0 -0 0.01em rgba(95, 95, 95, 0.2);
+    }
+
+    /*拖拽条块*/
+    .drag_bar{
+        width: 2rem;
+        cursor: move;
+        line-height: 2.5rem;
+        color:rgba(35,35,35,0.3);
+        text-align: center;
+        font-size: 1rem;
+        background-color: rgba(100,100,100,0.05);
+
+    }
+    
+    /*此部分内容摘自网络，非原创，详情请参照http://www.86y.org/art_detail.aspx?id=828*/
+    /*水波纹样式*/
+    .ripple {position:absolute;
+        background: rgba(0, 0, 0, 0.21);
+        border-radius:100%;
+        transform:scale(0);
+        -ms-transform: scale(0);
+        -moz-transform: scale(0);
+        -webkit-transform: scale(0);
+        -o-transform: scale(0);
+        pointer-events:none;
+    }
+    /*此部分内容摘自网络，非原创，详情请参照http://www.86y.org/art_detail.aspx?id=828*/
+    /*水波纹展示*/
+    .ripple.show {
+        animation:ripple .75s ease-out;
+    }
+    /*此部分内容摘自网络，非原创，详情请参照http://www.86y.org/art_detail.aspx?id=828*/
+    /*水波纹动画*/
+    @keyframes ripple {
+        to {transform:scale(2);
+            opacity:0;
+        }
+    }
+

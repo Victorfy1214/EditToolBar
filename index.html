@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Title</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--引入leaflet样式-->
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <!--引入地图样式-->
+    <link rel="stylesheet" href="css/map.css"><link>
+    <!--引入jquery库-->
+    <script src="js/jquery.min.js"></script>
+
+    <!--这里的fontawesome版本更新了-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--引入工具条样式-->
+    <link rel="stylesheet" href="css/EditTool.css">
+
+</head>
+
+<body>
+<!--地图DIV-->
+<div id = "mapDiv"></div>
+
+<!--工具条-->
+<div class = "tool_border">
+    <div class = "drag_bar" title="按住拖动">
+        <i class="fas fa-toolbox toolbox_icon"></i>
+    </div>
+</div>
+
+<script src="leaflet/leaflet.js"></script>
+
+<script type="text/javascript" src="js/map.js"></script>
+<!--引入工具条处理程序-->
+<script src="js/EditTool.js"></script>
+<script>
+
+    //工具条内容:按钮标识、按钮内容、按钮所对应的图标代码
+    let content = [['NewBtn','新建按钮','far fa-file'],
+                    ['SaveBtn','保存按钮','far fa-save'],
+                    ['DeleteBtn','删除按钮','far fa-trash-alt'],
+                    ['EditBtn','编辑按钮','far fa-edit']];
+
+    //新建工具条对象
+    let mToolBar = new EditTools();
+    //设置工具条内容
+    mToolBar.setToolBarContent(content);
+    //开启工具条的新建按钮
+    mToolBar.setButtonEnable('NewBtn',true);
+    mToolBar.setButtonEnable('SaveBtn',true);
+    //设置按钮监听
+    mToolBar.ButtonClickListener(function(id){
+        switch (id) {
+            case "NewBtn"://新建按钮
+                console.log(id);
+                break;
+            case "SaveBtn"://保存按钮
+                console.log(id);
+                break;
+            case "DeleteBtn"://删除按钮
+                console.log(id);
+                break;
+            case "EditBtn"://编辑按钮
+                console.log(id);
+                break;
+            default:
+                break;
+        }
+    });
+    //设置工具条是否显示
+    mToolBar.setToolBarDisplay(true);
+    //可在任意位置开启按钮，开启删除按钮
+    mToolBar.setButtonEnable('DeleteBtn',true);
+</script>
+</body>
+</html>
