@@ -36,7 +36,7 @@ css + javascript实现的可拖动工具条
  ```
  在`body`标签中添加如下标签
  ```html
-<<!--工具条-->
+<!--工具条-->
 <div class = "tool_border">
     <div class = "drag_bar" title="按住拖动">
         <i class="fas fa-toolbox toolbox_icon"></i>
