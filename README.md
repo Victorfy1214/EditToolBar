@@ -103,6 +103,6 @@ css + javascript实现的可拖动工具条
 ====
 
 * `setToolBarContent`： 此监听方法用于设置按钮的内容，参数`param`，传入你的按钮信息数组
-* `setToolBarDisplay`：该方法用于控制工具提哦啊的显示，参数`param`，true未显示，false为不显示
+* `setToolBarDisplay`：该方法用于控制工具条的显示，参数`param`，true未显示，false为不显示
 * `setButtonEnable`：该方法用于启用工具条按钮，包含两个参数`ID`和`param`，ID传入要设置状态的按钮id,param控制是否启用，true为启用，false为不启用
 * `ButtonClickListener`：该方法用于接收工具条按钮的结果回调
