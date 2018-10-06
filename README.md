@@ -18,6 +18,8 @@ css + javascript实现的可拖动工具条
 ====
 ![Image text](https://raw.githubusercontent.com/Victorfy1214/EditToolBar/master/preview/GIF.gif)
 
+[`在线Demo演示`](https://htmlpreview.github.io/?https://github.com/Victorfy1214/EditToolBar/blob/master/index.html)
+
 使用方法
 ====
 请参照leaflet官网自行创建地图
